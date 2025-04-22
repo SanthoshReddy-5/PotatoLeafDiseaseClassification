@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Potato Leaf Disease Recognition</h1>
+        </nav>
+    </header>
+
+    <main>
+        <div class="introduction">
+            <h2>Predict Potato Leaf Diseases Instantly</h2>
+            <p>Upload a leaf image and let our model predict diseases like Early
+                Blight, Late Blight or Healthy.
+            </p>
+        </div>
+
+        <div class="classlabels">
+            <div class="label">
+                <img src="{{ url_for('static', filename='./images/early.png') }}" alt="Early Blight">
+                <p>Early Blight</p>
+            </div>
+            <div class="label">
+                <img src="{{ url_for('static', filename='./images/late.png') }}" alt="Late Blight">
+                <p>Late Blight</p>
+            </div>
+            <div class="label">
+                <img src="{{ url_for('static', filename='./images/healthy.png') }}" alt="Healthy">
+                <p>Healthy</p>
+            </div>
+        </div>
+
+        <div class="start">
+            <a href="{{url_for('predictionPage')}}" class="started">Get Started</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Developed by Santhosh Reddy</p>
+    </footer>
+</body>
+</html>
+

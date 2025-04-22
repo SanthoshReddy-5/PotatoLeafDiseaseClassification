@@ -1,0 +1,353 @@
+/*styles for prediction page*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 10vh;
+   width: 100vw;
+   border-bottom: 3px solid white;
+   background-color: rgb(10, 1, 28);
+   color: rgb(230, 0, 255);
+}
+
+h1{
+    font-size: 35px;
+}
+
+main{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: rgb(17, 6, 38);
+}
+
+.upload-section{
+    width: 30%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+.upload-section form{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-box{
+  width: 80%;
+  height: 50%;
+  border:3px dashed rgb(230, 0, 255);
+  background-color: rgb(10, 1, 28);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.input-box i,p{
+  color: rgb(230, 0, 255);
+}
+
+.input-box i{
+  font-size: 50px;
+}
+
+.input-box p{
+  font-size: 30px;
+}
+
+.progress-area{
+  display: none;
+  height: 20%;
+  width: 80%;
+  background-color: rgb(10, 1, 28);
+  border: 3px solid rgb(230, 0, 255);
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+}
+ 
+.progress-row{
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.image-icon{
+  width: 20%;
+  height: 100%;
+}
+
+.image-icon i{
+  width: 100%;
+  height: 100%;
+  color: rgb(230, 0, 255);
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-content{
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.progress-details{
+  width: 90%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.progress-container{
+  height: 50%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar{
+  width: 100%;
+  height: 40%;
+  border-radius: 15px;
+  border: 2px solid rgb(230, 0, 255);
+}
+
+.progress{
+  border-radius: inherit;
+  height: 100%;
+  width: 80%;
+  background-color: rgb(230, 0, 255);
+}
+
+.uploaded-area{
+  display: none;
+  background-color: rgb(10, 1, 28);
+  height: 20%;
+  width: 80%;
+  border: 3px solid rgb(230, 0, 255);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.upload-row{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: inherit
+}
+
+.tick-mark{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tick-mark i{
+  width: 100%;
+  height: 100%;
+  color: rgb(230, 0, 255);
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-content{
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-content i{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(230, 0, 255);
+}
+
+.upload-details{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 16px;
+  color: rgb(230,0,255);
+}
+
+form button{
+    width: 120px;
+    height: 50px;
+    color: rgb(5, 243, 5);
+    font-size: 20px;
+    border: 3px solid rgb(5, 243, 5);
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    background-color: rgb(10, 1, 28);
+}
+
+form button:hover{
+  box-shadow: 0px 0px 10px 1px white;
+  background: linear-gradient(225deg,rgb(5,234,5),rgb(1, 82, 1));
+  color: white;
+  border: 3px solid white;
+}
+
+.result-section{
+    width: 30%;
+    height: 70%;
+    border: 3px solid white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    color: white;
+}
+
+.result-section h2{
+    height: 10%;
+    font-size: 30px;
+}
+
+.result-section h2 span{
+    color: rgb(5,234,5);
+}
+
+.result-section img{
+    width: 50%;
+    height: 50%;
+    border: 3px solid white;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+}
+
+.result-section img:hover{
+  transform: scale(1.05);
+  border: 3px solid rgb(230,0,255);
+  box-shadow: 0px 0px 20px 1px rgb(230,0,255);
+}
+
+footer{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(10, 1, 28);
+    border-top: 3px solid white;
+}
+
+.back{
+    margin-left: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 50px;
+    color: rgb(230, 0, 255);
+    font-size: 20px;
+    border: 3px solid rgb(230, 0, 255);
+    border-radius: 15px;
+    transition: color 0.3s ease;
+}
+
+.back:hover{
+  box-shadow: 0px 0px 10px 1px white;
+  background: linear-gradient(225deg,rgb(132, 0, 255),rgb(230,0,255));
+  color: white;
+  border: 3px solid white;
+}
+
+
+@media screen and (max-width: 480px){
+  h1{
+    font-size: 18px;
+    text-align: center;
+  }
+
+  main{
+    height: auto;
+    flex-direction: column;
+    padding-top: 30px;
+    gap:25px;
+  }
+
+  .upload-section{
+    height: 450px;
+    width: 80%;
+  }
+
+  .input-box p{
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .result-section{
+    height: 400px;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .result-section h2{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .result-section img{
+    width: 65%;
+    height: 50%;
+  }
+
+  .back{
+    margin-left: 30px;
+  }
+}

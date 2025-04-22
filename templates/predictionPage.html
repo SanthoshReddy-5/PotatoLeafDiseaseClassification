@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/predictionPage.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Potato Leaf Disease Recognition</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section class="upload-section">
+
+            <form action="/predict" method="POST" enctype="multipart/form-data">
+
+                <div class="input-box">
+                   <i class="fas fa-cloud-upload-alt"></i>
+                   <p>Upload Your Image</p>
+                   <input type="file" name="file" class="input-field" placeholder="Upload Your Image" accept="image/*" required hidden>
+                </div>
+
+                <div id="progressArea" class="progress-area">
+                    <div class="progress-row">
+                        <div class="image-icon"><i class="fas fa-file-alt"></i></div>
+                    
+                        <div class="progress-content">
+                            <div class="progress-details">
+                               <span id="uploadingFileName" class="progress-name">Santhosh.jpg - Uploading</span>
+                               <span id="uploadingPercentage" class="progress-percentage">80%</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div id="uploadingProgress" class="progress"></div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="uploadedArea" class="uploaded-area">
+                    <div class="upload-row">
+                    <div class="upload-content">
+                        <i class="fas fa-file-alt"></i>
+                        <div class="upload-details">
+                            <span id="uploadedFileName" class="upload-name">Santhosh.jpg - Uploaded</span>
+                            <span id="uploadedFileSize" class="upload-size">143 KB</span>
+                        </div>
+                    </div>
+                    <div class="tick-mark">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="button">Predict</button>
+            </form>
+        </section>
+
+        <section class="result-section">
+            <h2>Prediction Result: <span>{{ predicted_class }}</span></h2>
+            <img src="{{ uploaded_image_path }}" alt="Uploaded Image">
+        </section>
+    </main>
+     
+    <footer>
+        <a href="{{url_for('home')}}" class="back">Go Back</a>
+    </footer>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
