@@ -16,4 +16,5 @@ This project aims to detect and classify potato diseases using deep learning. Th
  - Frontend: HTML, CSS, JavaScript
  - Backend: Flask (Python)
  - Model: TensorFlow
-   
+## Dataset
+ - get the plant village dataset from the kaggle
