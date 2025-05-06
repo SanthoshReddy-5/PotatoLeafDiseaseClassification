@@ -11,6 +11,6 @@ This project aims to classify potato leaf diseases using deep learning. The syst
  -  Predict whether the plant is healthy or diseased.
  -  Display predicted output that is **Healthy**, **Late Blight** and **Early Blight**.
  -  Web-based interface for easy access with mobile responsive design.
- -  
+    
 ## Dataset
  - get the plantVillage dataset from the kaggle
