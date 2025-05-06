@@ -3,6 +3,7 @@ This project aims to classify potato leaf diseases using deep learning. The syst
 
 ## 🖼️ Screenshots
 ![Screenshot 2025-05-06 144849](https://github.com/user-attachments/assets/777e0615-001b-41db-9ad6-21fe7ca15c60)
+
 ![Screenshot 2025-05-06 142941](https://github.com/user-attachments/assets/5e22747b-9019-4144-8201-6b080d8a7489)
 
 ## 🚀 Features
