@@ -13,7 +13,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
 # Load the trained model
-model = load_model('./model/potato.keras')
+model = load_model('model/potato.keras')
 class_labels = ['Early Blight', 'Late Blight', 'Healthy']
 
 # Check file extension
