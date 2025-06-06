@@ -1,1 +1,4 @@
-flask tensorflow matplotlib numpy
+flask
+tensorflow
+matplotlib
+numpy
